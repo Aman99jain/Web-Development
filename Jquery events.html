@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+ $("img").click(function () {
+    $("#demo").append("<br>Clicked");
+});
+$("img").dblclick(function () {
+ $("#demo").append("<br>Dbl Clicked");
+});
+$("img").mouseenter(function () {
+$("#demo").append("<br>Mouse Entered");
+});
+$("img").mouseover(function () {
+ $("#demo").append("<br>Mouse over");
+});
+});
+    </script>
+<body>
+    <img src="/1.jpg" alt="My Self and me" height="300px">
+    <br/><br/>
+    <div id="demo">This is Jquery Events demo</div>
+</body>
+</html>

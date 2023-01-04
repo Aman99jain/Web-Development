@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .demo {
+        color: red;
+      }
+
+      .strongChai {
+        color: brown;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>This is document playground</h2>
+
+    <p id="p1">This is first Paragraph</p>
+    <p class="demo">This is para 2</p>
+    <p>This is para 3</p>
+    <p class="demo">This is para 4</p>
+
+    <br />
+    <button onclick="showResult();">Show</button>
+    <button onclick="changeClass();">Make it Strong</button>
+    <script>
+      function showResult() {
+        //alert(document.getElementById("p1").innerHTML);
+        //alert(document.getElementsByTagName("p")[0].innerHTML);
+        let length = document.getElementsByClassName("demo").length;
+        for (let i = 0; i < length; i++) {
+          console.log(document.getElementsByClassName("demo")[i].innerHTML);
+        }
+      }
+
+      function changeClass() {
+        console.log("changing classs");
+        let elements = document.getElementsByTagName("p");
+        let length = elements.length;
+        for (let i = 0; i < length; i++) {
+          elements[i].setAttribute("class", "strongChai");
+        }
+      }
+    </script>
+  </body>
+</html>

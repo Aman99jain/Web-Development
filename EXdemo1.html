@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>\\\Document</title>
+    <style>
+        .demo{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+   <h2>This is document playground</h2>
+
+   <p id="p1">This is first Paragraph</p>
+   <p>This is para 2</p>
+   <p>This is para 3</p>
+   <p>This is para 4</p>
+
+   <br />
+   <button onclick="showResult();">Show</button>
+   <script>
+    function showResult(){
+        //alert(document.getElementById("p1").innerHTML);
+        //alert(document.getElementsByTagName("p")[0].innerHTML);
+        let arrLength = document.getElementsByTagName("p").length;
+        for(let i = 0; i < arrLength; i++)
+         alert(document.getElementsByTagName("p")[i].innerHTML);
+    }
+   </script>
+   
+</body>
+</html>

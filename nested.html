@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <script>
+        let person = { firstName: "Anuj", lastName: "Sir", eyeColor: "grey" };
+
+        console.log(person);
+
+        let person2 =  {
+            firstName: "Sandeep",
+
+            lastName: "Singh",
+
+            eyeColor: "blue",
+
+            skills: {
+
+            skill1: "DESIGN WEB",
+
+            skill2: "DEVEPOS",
+
+            skill3: "STRUCTURAL DESIGN",
+        },
+        };
+console.log("PERSON2.EyeColor=" + person2.eyeColor);
+
+console.log("PERSON2.EyeColor=" + person2["eyeColor"]); 
+
+for (const x in person2) {
+console.log("PERSON2.Eyecolor=" + person2[x]);
+}
+console.log("PERSON2.SKILLS=" + person2.skills.skill);
+for (const x in person2.skills) {
+console.log("PERSON2. Skills=" + person2. skills[x]);
+}
+    </Script>
+</body>
+</html>
